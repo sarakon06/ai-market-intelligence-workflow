@@ -1,0 +1,52 @@
+{
+  "config": {
+    "target_ticker": "^GSPC",
+    "peer_tickers": [
+      "MSFT",
+      "GOOGL",
+      "AMZN"
+    ],
+    "start_date": "2015-01-01",
+    "end_date": "2025-01-01",
+    "frequency": "ME",
+    "test_horizon_months": 24,
+    "min_train_months": 48,
+    "n_estimators": 300,
+    "random_state": 42,
+    "positive_threshold": 0.55,
+    "output_dir": "yellowwood_outputs",
+    "fred_indicators": {
+      "DFF": "FedFundsRate",
+      "CPIAUCSL": "CPI",
+      "UNRATE": "UnemploymentRate",
+      "UMCSENT": "ConsumerSentiment",
+      "RSAFS": "RetailSales"
+    }
+  },
+  "metrics": {
+    "accuracy": 0.5833333333333334,
+    "precision": 0.6666666666666666,
+    "recall": 0.75,
+    "f1": 0.7058823529411765,
+    "mean_prob_up": 0.5881780174864969,
+    "coverage_months": 24
+  },
+  "latest_signal": {
+    "as_of": "2024-12-31",
+    "signal": "Down",
+    "prob_up": 0.2917,
+    "confidence": 0.4167
+  },
+  "top_features": {
+    "GSPC_ret_6m": 0.073343,
+    "rel_perf_GSPC_vs_MSFT_3m": 0.071757,
+    "GSPC_ma_gap_6m": 0.069558,
+    "GSPC_vol_3m": 0.066889,
+    "rel_perf_GSPC_vs_GOOGL_6m": 0.065631,
+    "GSPC_ret_3m": 0.064848,
+    "rel_perf_GSPC_vs_AMZN_6m": 0.064322,
+    "GSPC_ret_1m": 0.061097,
+    "GSPC_ma_gap_3m": 0.05866,
+    "GOOGL_ret_1m": 0.058501
+  }
+}
