@@ -1,2 +1,2 @@
 # ai-market-intelligence-workflow
-AI/ML market intelligence pipeline that automates multi-source data analysis, generates interpretable signals, and produces research-ready outputs for decision support.
+AI Market Intelligence Workflow is a Python-based decision-support pipeline that automates the collection and alignment of market and macroeconomic data, engineers interpretable features, applies walk-forward backtesting, and generates structured research outputs such as signal summaries, feature-importance rankings, and a brief for non-technical review. The project is designed as a research prioritization and signal-screening tool rather than a stand-alone investment engine.
